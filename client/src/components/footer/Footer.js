@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/footer/Footer.css";
+import { words } from "../../words";
 
 export default function Footer() {
-  return <footer>footer</footer>;
+  return <footer>{words.footerTitle}</footer>;
 }
