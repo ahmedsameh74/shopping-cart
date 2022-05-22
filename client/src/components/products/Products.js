@@ -3,7 +3,7 @@ import "../../css/products/Products.css";
 // import Modal from "react-modal";
 import ProductModal from "./ProductModal";
 
-export default function Products({ products }) {
+export default function Products({ products, addToCart }) {
   const [product, setProduct] = useState("");
 
   const openModal = (product) => {
@@ -24,7 +24,7 @@ export default function Products({ products }) {
             <p>{product.title}</p>
             <span>${product.price}</span>
           </div>
-          <button>Add to cart</button>
+          <button onClick={() => addToCart(product)}>Add to cart</button>
         </div>
       ))}
 
