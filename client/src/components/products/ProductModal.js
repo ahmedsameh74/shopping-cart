@@ -1,7 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
 
-export default function ProductModal({ product, openModal, closeModal }) {
+export default function ProductModal({ product, closeModal }) {
+  // console.log(product.length);
   return (
     <Modal isOpen={product} onRequestClose={closeModal}>
       <span onClick={closeModal} className="close">
