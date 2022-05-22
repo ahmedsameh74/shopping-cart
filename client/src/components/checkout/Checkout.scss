@@ -1,0 +1,25 @@
+form{
+    width: 60%;
+    margin: auto;
+    > div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    input{
+        height: 40px;
+        padding: 5px;
+        border: 1px solid #c0c0c0;
+    }
+    button{
+        cursor: pointer;
+        height: 40px;
+    }
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
